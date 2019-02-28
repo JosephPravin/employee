@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.employee</groupId>
+  <artifactId>employee</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  
+  <dependencies>
+  	
+  </dependencies>
+  
+  <properties>
+    <maven.compiler.source>1.6</maven.compiler.source>
+    <maven.compiler.target>1.6</maven.compiler.target>
+  </properties>
+  <packaging>war</packaging>
+  
+  <build>
+  <plugins>
+	  <plugin>
+		    <artifactId>maven-war-plugin</artifactId>
+		    <configuration>
+		        <attachClasses>true</attachClasses>
+		        <webXml>target/web.xml</webXml>
+		        <webResources>
+		            <resource>
+		                <directory>src/main/webapp</directory>
+		                <filtering>true</filtering>
+		            </resource>
+		        </webResources>
+		    </configuration>
+		</plugin>
+  </plugins>
+  </build>
+  
+  
+</project>
